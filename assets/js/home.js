@@ -71,9 +71,9 @@ document.querySelector(".enter-btn").addEventListener("click", function (e) {
     // Flash effect before transition
     setTimeout(() => {
         overlay.classList.add("flash");
-    }, 500);
+    }, 200);
 
     setTimeout(() => {
         window.location.href = this.href;
-    }, 1000);
+    }, 500);
 });

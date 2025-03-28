@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aayush Bankar | Portfolio</title>
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <!-- Background Effects -->
+    <div class="bg-container">
+        <canvas id="fluidCanvas"></canvas>
+        <div class="grid"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1 class="title">Aayush Bankar</h1>
+        <p class="subtext">Student | Tech Enthusiast | <span class="legion-text">LEGION</span></p>
+        <a href="about.html" class="enter-btn">Enter</a>
+    </div>
+
+    <!-- Page Transition -->
+    <div class="transition-overlay"></div>
+
+    <script src="assets/js/home.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/fluid.js"></script>
+</body>
+</html>

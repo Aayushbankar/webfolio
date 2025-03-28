@@ -1,0 +1,175 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-Screen Background */
+body {
+    background: radial-gradient(circle, #0b001f 10%, #000000 90%);
+    color: #d1d1d1;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Background Effects */
+.bg-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Fluid Canvas */
+#fluidCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+/* Cyberpunk Grid */
+.grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    opacity: 0.15;
+}
+
+/* Grid Cells */
+.grid div {
+    border: 1px solid rgba(0, 230, 255, 0.2);
+    box-shadow: 0 0 12px rgba(0, 230, 255, 0.4);
+}
+
+/* Title */
+.title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0px 0px 15px rgba(143, 0, 255, 0.8);
+}
+
+/* Subtext */
+.subtext {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #aaa;
+}
+
+/* Enter Button */
+.enter-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 20px;
+    background: linear-gradient(45deg, #ff003c, #8f00ff);
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 0, 60, 0.7);
+    box-shadow: 0px 0px 20px rgba(255, 0, 60, 0.6);
+}
+
+/* Button Hover */
+.enter-btn:hover {
+    background: linear-gradient(45deg, #ff003c, #4b0082);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 30px rgba(255, 0, 60, 0.9);
+}
+
+/* Transition Overlay (Fixed Full-Screen Effect) */
+.transition-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+    z-index: 100;
+}
+
+/* Flashing Effect */
+.flash {
+    background: white;
+    animation: flashEffect 0.3s ease-in-out;
+}
+
+/* Transition Active State */
+.transition-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Flash Animation */
+@keyframes flashEffect {
+    0% { opacity: 0.8; }
+    100% { opacity: 0; }
+}
+
+/* Cyberpunk Grid Background */
+.bg-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Fluid Canvas Effect */
+#fluidCanvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* Title & Animations */
+.title {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px rgba(143, 0, 255, 0.8);
+    transition: all 0.3s ease-in-out;
+}
+
+.legion-text {
+    color: rgba(255, 0, 60, 0.8);
+    text-shadow: 0px 0px 10px rgba(255, 0, 60, 0.9);
+    transition: opacity 0.5s ease-in-out;
+}
+
+.enter-btn {
+    background: linear-gradient(45deg, #ff003c, #8f00ff);
+    border: 1px solid rgba(255, 0, 60, 0.7);
+    box-shadow: 0px 0px 20px rgba(255, 0, 60, 0.6);
+    transition: all 0.3s ease-in-out;
+}
+
+.enter-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 30px rgba(255, 0, 60, 0.9);
+}

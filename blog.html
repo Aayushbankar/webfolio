@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Aayush Bankar</title>
+  <link rel="stylesheet" href="assets/css/blog.css" />
+  <link rel="stylesheet" href="assets/css/navbar.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </div>
+  </nav>
+
+  <!-- Background Effects -->
+  <div class="bg-container">
+    <canvas id="fluidCanvas"></canvas>
+    <div class="grid"></div>
+  </div>
+
+  <!-- Blog Cards Grid -->
+  <main class="blog-grid">
+    <!-- Card 1 -->
+    <article class="blog-card" data-post="post1">
+      <div class="card-content">
+        <h2 class="card-title" data-text="Unraveling the Code: The Kafka AI Revolution">
+          Unraveling the Code: The Kafka AI Revolution
+        </h2>
+        <p class="card-date">August 15, 2025</p>
+        <p class="card-excerpt">
+          At a recent hackathon, I merged Kafka’s real‑time data with AI creativity to create digital poetry...
+        </p>
+      </div>
+    </article>
+    <!-- Card 2 -->
+    <article class="blog-card" data-post="post2">
+      <div class="card-content">
+        <h2 class="card-title" data-text="Inside an OTP Bomber: Anatomy of a Digital Exploit">
+          Inside an OTP Bomber: Anatomy of a Digital Exploit
+        </h2>
+        <p class="card-date">July 20, 2025</p>
+        <p class="card-excerpt">
+          Delving into the inner mechanics of OTP bombers reveals unexpected insights into API vulnerabilities...
+        </p>
+      </div>
+    </article>
+    <!-- Card 3 -->
+    <article class="blog-card" data-post="post3">
+      <div class="card-content">
+        <h2 class="card-title" data-text="Cybersecurity in the Age of AI: Balancing Innovation & Protection">
+          Cybersecurity in the Age of AI: Balancing Innovation & Protection
+        </h2>
+        <p class="card-date">June 10, 2025</p>
+        <p class="card-excerpt">
+          How do we secure our future when AI drives both innovation and cyber threats? Explore a balanced perspective...
+        </p>
+      </div>
+    </article>
+  </main>
+
+<!-- Full-Screen Modal for Blog Articles -->
+<div id="blogModal" class="modal">
+    <div class="modal-content">
+      <!-- Back Button: now only an arrow -->
+      <button class="modal-back" onclick="closeModal()">←</button>
+      <div id="modal-body">
+        <!-- Full blog content loads dynamically -->
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Transition Overlay -->
+  <div class="transition-overlay"></div>
+
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/fluid.js"></script>
+  <script src="assets/js/blog.js"></script>
+</body>
+</html>
